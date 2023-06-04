@@ -8,38 +8,32 @@
  *2. Создать папку.*
 
   
-   + `mkdir folder`
+   + `mkdir dir`
  
  *3. Зайти в папку.*
 
   
-   + `cd folder`
+   + `cd dir`
    
 *4. Создать 3 папки.*
 
-  
-   + `mkdir folder1 folder2 folder3`
 
-   + `mkdir folder{1..3}`
+   + `mkdir dir{1..3}`
   
 *5. Зайти в любую папку.*
 
   
-   + `cd folder1`
+   + `cd dir_1`
   
  *6. Создать 5 файлов (3 txt, 2 json).*
 
   
    + `touch file1.txt file2.txt file3.txt file1.json file2.json`
   
-   + `touch file{1..3}.txt file{1..2}.json`
-  
  *7. Создать 3 папки.*
 
   
-   + `mkdir folder_1 folder_2 folder_3`
-
-   + `mkdir folder{1..3}`
+   + `mkdir diradd{1..3}`
   
  *8. Вывести список содержимого папки.*
 
@@ -49,7 +43,7 @@
  *9. Открыть любой txt файл(для редактирования).*
 
   
-   + `vim file1.txt`
+   + `vim text.txt`
 
  *10. Написать туда что-нибудь, любой текст.*
 
@@ -75,39 +69,39 @@
  *13. Переместить любые 2 файла, которые вы создали, в любую другую папку.*
 
   
-   + `mv folder1/{file2.txt,file1.json} folder1/folder_1`
+   + `mv {file1.json,file2.json} diradd1`
     
  *14. Скопировать любые 2 файла, которые вы создали, в любую другую папку.*
 
   
-   + `cp folder1/{file3.txt,file2.json} folder1/folder_2`
+   + `cp {file1.txt,file2.txt} diradd2`
   
  *15. Найти файл по имени.*
 
   
-   + `find . -name "file1*"`
+   + `find . -name "file3.txt"`
   
  *16. Просмотреть содержимое в реальном времени (команда grep) изучите как она работает.*
 
   
-   + `tail -f file1.txt | grep pattern` (редактируем, сохраняем и смотрим в текстовом редакторе)
+   + `tail -f text.txt | grep pattern` (редактируем, сохраняем и смотрим в текстовом редакторе)
 
-   + `tail -f file1.txt | grep --line-buffered pattern >> 1_log.txt | tail -f 1_log.txt` (запись в файл с отображением в терминале)
+   + `tail -f text.txt | grep --line-buffered pattern >> text_log.txt | tail -f text_log.txt` (запись в файл с отображением в терминале)
 
  *17. Вывести несколько первых строк из текстового файла.*
 
   
-   + `head -3 file1.txt`
+   + `head -5 text.txt`
 
  *18. Вывести несколько последних строк из текстового файла.*
 
   
-   + `tail -3 file1.txt`
+   + `tail -5 text.txt`
   
  *19. Просмотреть содержимое длинного файла (команда less) изучите как она работает.*
 
   
-   + `less file1.txt`
+   + `less text.txt`
 
    + нажать `"q"`
 
@@ -115,60 +109,4 @@
 
   
    + `date`
-
-##  Дополнительные задания ∗ 
-
- *1. Отправить http запрос на сервер. `<http://162.55.220.72:5005/terminal-hw-request>`.*
-
-  
-   + `curl <http://162.55.220.72:5005/terminal-hw-request>`
-
-Ответ:
-
-```json
-  {"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: `<http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number>)","result":["Your_String","Your_number"]`}} 
-```
-
-выполняем Task1:
-
-   + `curl "<http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number>)"`
-
-   + `(set_your_String) --> "Lily", (set_your_number) -->  33`
-  
-Ответ:
-
-   + `["Lily"," 33"]`
-
- *2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13.*
-
-  
-   + `cat > script.sh`
-
-   + `vim script.sh`
-  
-   + нажать `"i"`
-
-```bash
-# !/bin/bash
-
-pwd
-
-mkdir folder_script
-
-cd folder_script
-
-mkdir folder1 folder2 folder3
-
-cd folder3
-
-touch {f1.txt,f2.txt,f3.txt,f4.json,f5.json}
-
-mkdir script_folder1 script_folder2 script_folder3
-
-ls -la
-
-mv f1.txt f4.json script_folder2
-
-./script.sh
-```
 

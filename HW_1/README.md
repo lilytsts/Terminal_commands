@@ -133,11 +133,11 @@
 
    + `curl "<http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number>)"`
 
-   + `(set_your_String) --> "Aleksei", (set_your_number) --> 29`
+   + `(set_your_String) --> "Lily", (set_your_number) --> 33`
   
 Ответ:
 
-   + `["Aleksei","29"]`
+   + `["Lily","33"]`
 
 * 2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13.*
 

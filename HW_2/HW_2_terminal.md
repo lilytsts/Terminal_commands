@@ -206,7 +206,8 @@ the third 3
     + `grep -rh sec . > file38.txt`
  
  *39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”*
-  ?????
+ 
++ `find /Users/liliacikul/Terminal_commands/HW_2/dir_1 -type f -name "*.txt" -exec grep -l "sec" {} \; -exec rm {} \;`
    
  *40. Просто вывести в терминал строку “Good job!!”*
  

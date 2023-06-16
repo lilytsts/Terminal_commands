@@ -130,3 +130,22 @@ curl  "http://162.55.220.72:5005/get_method?name=Lily&age=33"
 3) Зайти в папку - cd foldername
 
 
+Вариант2
+1. Создать файл с расширением myscript.sh ---> touch myscript.sh
+2. Открыть его для редактирования ---> nano myscript.sh / vim myscript.sh
+3. Записать туда команды из пунктов 3, 4, 5, 6, 7, 8, 13
+cd 1606
+mkdir dir{1..3}
+cd dir1
+touch file1.txt file2.txt file3.txt file1.json file2.json
+mkdir diradd{1..3}
+ls -la
+mv diradd1/{file1.json,file2.json} diradd2
+
+4. Сохранить файл tr1+0
+5. :wq - записать файл и выйти из vim;
+6. Запустить скрипт sh myscript.sh
+
+
+
+

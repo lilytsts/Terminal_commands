@@ -115,10 +115,21 @@ grep -l "123" * - во всех файловых сопоставлениях в
 *1. Отправить http запрос на сервер*
 http://162.55.220.72:5005/terminal-hw-request
 
-curl  "http://162.55.220.72:5005/get_method?name=Lily&age=33"
+curl  "http://162.55.220.72:5006/terminal-hw-request"
 
++ `{
+  "Intro": "Hello!! This is your the first response from server", 
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)", 
+    "result": [
+      "Your_String", 
+      "Your_number"
+    ]
+  }
+}`
+curl "http://162.55.220.72:5005/get_method?name=lily&age=33"
 + `[
-  "Lily", 
+  "lily", 
   "33"
 ]`
 

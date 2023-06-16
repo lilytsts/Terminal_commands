@@ -133,14 +133,14 @@ curl  "http://162.55.220.72:5005/get_method?name=Lily&age=33"
 + `vim myscript.sh`
 
 *2.3 Записать туда команды из пунктов 3, 4, 5, 6, 7, 8, 13*
-+ `cd 1606
-mkdir dirsh{1..3}
-cd dirsh1
-touch file1.txt file2.txt file3.txt file1.json file2.json
-mkdir diradd{1..3}
-ls -la
-cd
-mv diradd1/file1.txt diradd1/file2.txt diradd2`
++ `cd 1606`
++ `mkdir dirsh{1..3}`
++ `cd dirsh1`
++ `touch file1.txt file2.txt file3.txt file1.json file2.json`
++ `mkdir diradd{1..3}`
++ `ls -la`
++ `cd`
++ `mv diradd1/file1.txt diradd1/file2.txt diradd2`
 
 *2.4 Сохранить файл и записать файл и выйти из vim*
 

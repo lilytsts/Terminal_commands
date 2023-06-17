@@ -117,7 +117,7 @@ http://162.55.220.72:5005/terminal-hw-request
 
 curl  "http://162.55.220.72:5006/terminal-hw-request"
 
-{
+```{
   "Intro": "Hello!! This is your the first response from server", 
   "Tasks": {
     "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)", 
@@ -126,12 +126,12 @@ curl  "http://162.55.220.72:5006/terminal-hw-request"
       "Your_number"
     ]
   }
-}
+}```
 curl "http://162.55.220.72:5005/get_method?name=lily&age=33"
-[
+```[
   "lily", 
   "33"
-]
+]```
 
 *2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13*
 
@@ -144,14 +144,14 @@ curl "http://162.55.220.72:5005/get_method?name=lily&age=33"
 + `vim myscript.sh`
 
 *2.3 Записать туда команды из пунктов 3, 4, 5, 6, 7, 8, 13*
-+ `cd 1606`
-+ `mkdir dirsh{1..3}`
-+ `cd dirsh1`
-+ `touch file1.txt file2.txt file3.txt file1.json file2.json`
-+ `mkdir diradd{1..3}`
-+ `ls -la`
-+ `cd`
-+ `mv diradd1/file1.txt diradd1/file2.txt diradd2`
+```cd 1606
+mkdir dirsh{1..3}
+cd dirsh1
+touch file1.txt file2.txt file3.txt file1.json file2.json
+mkdir diradd{1..3}
+ls -la
+cd
+mv diradd1/file1.txt diradd1/file2.txt diradd2```
 
 *2.4 Сохранить файл и записать файл и выйти из vim*
 

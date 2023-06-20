@@ -162,6 +162,8 @@ mv diradd1/file1.txt diradd1/file2.txt diradd2
 *2.4 Сохранить файл и записать файл и выйти из vim*
 + `control + D`
 + `:wq`
+
+  
 *2.5 Запустить скрипт*
 + `sh myscript.sh`
 

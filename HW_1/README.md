@@ -127,7 +127,9 @@ curl  "http://162.55.220.72:5006/terminal-hw-request"
     ]
   }
 }
+
 curl "http://162.55.220.72:5005/get_method?name=lily&age=33"
+
 [
   "lily", 
   "33"
@@ -144,6 +146,8 @@ curl "http://162.55.220.72:5005/get_method?name=lily&age=33"
 + `vim myscript.sh`
 
 *2.3 Записать туда команды из пунктов 3, 4, 5, 6, 7, 8, 13*
++ `i`
+
 cd 1606
 mkdir dirsh{1..3}
 cd dirsh1
@@ -153,8 +157,11 @@ ls -la
 cd
 mv diradd1/file1.txt diradd1/file2.txt diradd2
 
-*2.4 Сохранить файл и записать файл и выйти из vim*
 
+
+*2.4 Сохранить файл и записать файл и выйти из vim*
++ `control + D`
++ `:wq`
 *2.5 Запустить скрипт*
 + `sh myscript.sh`
 
